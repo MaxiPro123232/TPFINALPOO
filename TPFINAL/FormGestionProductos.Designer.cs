@@ -47,8 +47,9 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            dgvProductos = new DataGridView();
+            label7 = new Label();
+            ((System.ComponentModel.ISupportInitialize)dgvProductos).BeginInit();
             SuspendLayout();
             // 
             // txtNombre
@@ -96,7 +97,7 @@
             // 
             // btnAgregarProducto
             // 
-            btnAgregarProducto.Location = new Point(311, 15);
+            btnAgregarProducto.Location = new Point(362, 15);
             btnAgregarProducto.Name = "btnAgregarProducto";
             btnAgregarProducto.Size = new Size(120, 23);
             btnAgregarProducto.TabIndex = 6;
@@ -105,7 +106,7 @@
             // 
             // btnModificarProducto
             // 
-            btnModificarProducto.Location = new Point(311, 66);
+            btnModificarProducto.Location = new Point(362, 44);
             btnModificarProducto.Name = "btnModificarProducto";
             btnModificarProducto.Size = new Size(120, 23);
             btnModificarProducto.TabIndex = 7;
@@ -114,7 +115,7 @@
             // 
             // btnEliminarProducto
             // 
-            btnEliminarProducto.Location = new Point(311, 115);
+            btnEliminarProducto.Location = new Point(362, 73);
             btnEliminarProducto.Name = "btnEliminarProducto";
             btnEliminarProducto.Size = new Size(120, 23);
             btnEliminarProducto.TabIndex = 8;
@@ -123,7 +124,7 @@
             // 
             // btnBuscarProducto
             // 
-            btnBuscarProducto.Location = new Point(311, 164);
+            btnBuscarProducto.Location = new Point(363, 165);
             btnBuscarProducto.Name = "btnBuscarProducto";
             btnBuscarProducto.Size = new Size(120, 23);
             btnBuscarProducto.TabIndex = 9;
@@ -132,25 +133,25 @@
             // 
             // btnListarProductos
             // 
-            btnListarProductos.Location = new Point(450, 15);
+            btnListarProductos.Location = new Point(362, 136);
             btnListarProductos.Name = "btnListarProductos";
-            btnListarProductos.Size = new Size(112, 23);
+            btnListarProductos.Size = new Size(121, 23);
             btnListarProductos.TabIndex = 10;
             btnListarProductos.Text = " Listar Productos";
             btnListarProductos.UseVisualStyleBackColor = true;
             // 
             // btnFiltrarPorRubro
             // 
-            btnFiltrarPorRubro.Location = new Point(450, 63);
+            btnFiltrarPorRubro.Location = new Point(362, 107);
             btnFiltrarPorRubro.Name = "btnFiltrarPorRubro";
-            btnFiltrarPorRubro.Size = new Size(112, 23);
+            btnFiltrarPorRubro.Size = new Size(121, 23);
             btnFiltrarPorRubro.TabIndex = 11;
             btnFiltrarPorRubro.Text = "Filtrar Por Rubro";
             btnFiltrarPorRubro.UseVisualStyleBackColor = true;
             // 
             // btnVolver
             // 
-            btnVolver.Location = new Point(450, 115);
+            btnVolver.Location = new Point(363, 194);
             btnVolver.Name = "btnVolver";
             btnVolver.Size = new Size(112, 23);
             btnVolver.TabIndex = 12;
@@ -211,20 +212,30 @@
             label6.TabIndex = 18;
             label6.Text = "Fecha Vencimiento:";
             // 
-            // dataGridView1
+            // dgvProductos
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(528, 258);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(240, 150);
-            dataGridView1.TabIndex = 19;
+            dgvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvProductos.Location = new Point(552, 32);
+            dgvProductos.Name = "dgvProductos";
+            dgvProductos.Size = new Size(431, 260);
+            dgvProductos.TabIndex = 19;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(552, 9);
+            label7.Name = "label7";
+            label7.Size = new Size(67, 15);
+            label7.TabIndex = 20;
+            label7.Text = "Resultados:";
             // 
             // FormGestionProductos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
+            ClientSize = new Size(995, 300);
+            Controls.Add(label7);
+            Controls.Add(dgvProductos);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -246,7 +257,7 @@
             Controls.Add(txtNombre);
             Name = "FormGestionProductos";
             Text = "FormGestionProductos";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvProductos).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -272,6 +283,7 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private DataGridView dataGridView1;
+        private DataGridView dgvProductos;
+        private Label label7;
     }
 }
