@@ -47,6 +47,8 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // txtNombre
@@ -209,11 +211,20 @@
             label6.TabIndex = 18;
             label6.Text = "Fecha Vencimiento:";
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(528, 258);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(240, 150);
+            dataGridView1.TabIndex = 19;
+            // 
             // FormGestionProductos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(dataGridView1);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -235,6 +246,7 @@
             Controls.Add(txtNombre);
             Name = "FormGestionProductos";
             Text = "FormGestionProductos";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -260,5 +272,6 @@
         private Label label4;
         private Label label5;
         private Label label6;
+        private DataGridView dataGridView1;
     }
 }
