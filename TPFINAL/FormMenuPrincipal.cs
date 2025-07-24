@@ -6,5 +6,10 @@ namespace TPFINAL
         {
             InitializeComponent();
         }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -45,6 +45,7 @@
             btnProductos.TabIndex = 0;
             btnProductos.Text = "Gestion de Productos";
             btnProductos.UseVisualStyleBackColor = true;
+            btnProductos.Click += btnProductos_Click;
             // 
             // btnRubros
             // 
