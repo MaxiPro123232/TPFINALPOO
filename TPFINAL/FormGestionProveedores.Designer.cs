@@ -42,6 +42,9 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            dgvProveedores = new DataGridView();
+            label5 = new Label();
+            ((System.ComponentModel.ISupportInitialize)dgvProveedores).BeginInit();
             SuspendLayout();
             // 
             // txtNombreProveedor
@@ -74,7 +77,7 @@
             // 
             // btnAgregarProveedor
             // 
-            btnAgregarProveedor.Location = new Point(340, 38);
+            btnAgregarProveedor.Location = new Point(340, 22);
             btnAgregarProveedor.Name = "btnAgregarProveedor";
             btnAgregarProveedor.Size = new Size(146, 23);
             btnAgregarProveedor.TabIndex = 4;
@@ -83,7 +86,7 @@
             // 
             // btnModificarProveedor
             // 
-            btnModificarProveedor.Location = new Point(340, 91);
+            btnModificarProveedor.Location = new Point(340, 62);
             btnModificarProveedor.Name = "btnModificarProveedor";
             btnModificarProveedor.Size = new Size(146, 23);
             btnModificarProveedor.TabIndex = 5;
@@ -92,7 +95,7 @@
             // 
             // btnEliminarProveedor
             // 
-            btnEliminarProveedor.Location = new Point(340, 135);
+            btnEliminarProveedor.Location = new Point(340, 101);
             btnEliminarProveedor.Name = "btnEliminarProveedor";
             btnEliminarProveedor.Size = new Size(146, 23);
             btnEliminarProveedor.TabIndex = 6;
@@ -101,7 +104,7 @@
             // 
             // btnBuscarProveedor
             // 
-            btnBuscarProveedor.Location = new Point(340, 178);
+            btnBuscarProveedor.Location = new Point(340, 144);
             btnBuscarProveedor.Name = "btnBuscarProveedor";
             btnBuscarProveedor.Size = new Size(146, 23);
             btnBuscarProveedor.TabIndex = 7;
@@ -110,7 +113,7 @@
             // 
             // btnListarProveedores
             // 
-            btnListarProveedores.Location = new Point(340, 228);
+            btnListarProveedores.Location = new Point(340, 188);
             btnListarProveedores.Name = "btnListarProveedores";
             btnListarProveedores.Size = new Size(146, 23);
             btnListarProveedores.TabIndex = 8;
@@ -119,7 +122,7 @@
             // 
             // btnVolver
             // 
-            btnVolver.Location = new Point(340, 278);
+            btnVolver.Location = new Point(340, 236);
             btnVolver.Name = "btnVolver";
             btnVolver.Size = new Size(146, 23);
             btnVolver.TabIndex = 9;
@@ -162,11 +165,30 @@
             label4.TabIndex = 13;
             label4.Text = "Direccion:";
             // 
+            // dgvProveedores
+            // 
+            dgvProveedores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvProveedores.Location = new Point(535, 25);
+            dgvProveedores.Name = "dgvProveedores";
+            dgvProveedores.Size = new Size(410, 255);
+            dgvProveedores.TabIndex = 14;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(535, 7);
+            label5.Name = "label5";
+            label5.Size = new Size(75, 15);
+            label5.TabIndex = 15;
+            label5.Text = "Proveedores:";
+            // 
             // FormGestionProveedores
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(563, 341);
+            ClientSize = new Size(976, 292);
+            Controls.Add(label5);
+            Controls.Add(dgvProveedores);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -183,6 +205,7 @@
             Controls.Add(txtNombreProveedor);
             Name = "FormGestionProveedores";
             Text = "FormGestionProveedores";
+            ((System.ComponentModel.ISupportInitialize)dgvProveedores).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -203,5 +226,7 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private DataGridView dgvProveedores;
+        private Label label5;
     }
 }

@@ -35,11 +35,19 @@
             btnHistorialProducto = new Button();
             btnProductosPorVencer = new Button();
             btnVolver = new Button();
+            dgvResultados = new DataGridView();
+            cmbProductoHistorial = new ComboBox();
+            label1 = new Label();
+            nudUmbralStock = new NumericUpDown();
+            label2 = new Label();
+            label3 = new Label();
+            ((System.ComponentModel.ISupportInitialize)dgvResultados).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudUmbralStock).BeginInit();
             SuspendLayout();
             // 
             // btnStockActual
             // 
-            btnStockActual.Location = new Point(41, 27);
+            btnStockActual.Location = new Point(98, 46);
             btnStockActual.Name = "btnStockActual";
             btnStockActual.Size = new Size(195, 23);
             btnStockActual.TabIndex = 0;
@@ -48,7 +56,7 @@
             // 
             // btnStockPorRubro
             // 
-            btnStockPorRubro.Location = new Point(41, 73);
+            btnStockPorRubro.Location = new Point(98, 75);
             btnStockPorRubro.Name = "btnStockPorRubro";
             btnStockPorRubro.Size = new Size(195, 23);
             btnStockPorRubro.TabIndex = 1;
@@ -57,7 +65,7 @@
             // 
             // btnMovimientosPorProveedor
             // 
-            btnMovimientosPorProveedor.Location = new Point(41, 119);
+            btnMovimientosPorProveedor.Location = new Point(98, 104);
             btnMovimientosPorProveedor.Name = "btnMovimientosPorProveedor";
             btnMovimientosPorProveedor.Size = new Size(195, 23);
             btnMovimientosPorProveedor.TabIndex = 2;
@@ -66,7 +74,7 @@
             // 
             // btnProductosBajoStock
             // 
-            btnProductosBajoStock.Location = new Point(41, 171);
+            btnProductosBajoStock.Location = new Point(98, 133);
             btnProductosBajoStock.Name = "btnProductosBajoStock";
             btnProductosBajoStock.Size = new Size(195, 23);
             btnProductosBajoStock.TabIndex = 3;
@@ -75,7 +83,7 @@
             // 
             // btnHistorialProducto
             // 
-            btnHistorialProducto.Location = new Point(41, 217);
+            btnHistorialProducto.Location = new Point(98, 220);
             btnHistorialProducto.Name = "btnHistorialProducto";
             btnHistorialProducto.Size = new Size(195, 23);
             btnHistorialProducto.TabIndex = 4;
@@ -84,7 +92,7 @@
             // 
             // btnProductosPorVencer
             // 
-            btnProductosPorVencer.Location = new Point(41, 263);
+            btnProductosPorVencer.Location = new Point(98, 191);
             btnProductosPorVencer.Name = "btnProductosPorVencer";
             btnProductosPorVencer.Size = new Size(195, 23);
             btnProductosPorVencer.TabIndex = 5;
@@ -93,18 +101,74 @@
             // 
             // btnVolver
             // 
-            btnVolver.Location = new Point(41, 309);
+            btnVolver.Location = new Point(98, 249);
             btnVolver.Name = "btnVolver";
             btnVolver.Size = new Size(195, 23);
             btnVolver.TabIndex = 6;
             btnVolver.Text = "Volver";
             btnVolver.UseVisualStyleBackColor = true;
             // 
+            // dgvResultados
+            // 
+            dgvResultados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvResultados.Location = new Point(350, 41);
+            dgvResultados.Name = "dgvResultados";
+            dgvResultados.Size = new Size(361, 202);
+            dgvResultados.TabIndex = 7;
+            // 
+            // cmbProductoHistorial
+            // 
+            cmbProductoHistorial.FormattingEnabled = true;
+            cmbProductoHistorial.Location = new Point(98, 7);
+            cmbProductoHistorial.Name = "cmbProductoHistorial";
+            cmbProductoHistorial.Size = new Size(195, 23);
+            cmbProductoHistorial.TabIndex = 8;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 16);
+            label1.Name = "label1";
+            label1.Size = new Size(59, 15);
+            label1.TabIndex = 9;
+            label1.Text = "Producto:";
+            // 
+            // nudUmbralStock
+            // 
+            nudUmbralStock.Location = new Point(98, 162);
+            nudUmbralStock.Name = "nudUmbralStock";
+            nudUmbralStock.Size = new Size(195, 23);
+            nudUmbralStock.TabIndex = 10;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(350, 7);
+            label2.Name = "label2";
+            label2.Size = new Size(67, 15);
+            label2.TabIndex = 11;
+            label2.Text = "Resultados:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(6, 170);
+            label3.Name = "label3";
+            label3.Size = new Size(86, 15);
+            label3.TabIndex = 12;
+            label3.Text = "Stock menor a:";
+            // 
             // FormReportes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(751, 296);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(nudUmbralStock);
+            Controls.Add(label1);
+            Controls.Add(cmbProductoHistorial);
+            Controls.Add(dgvResultados);
             Controls.Add(btnVolver);
             Controls.Add(btnProductosPorVencer);
             Controls.Add(btnHistorialProducto);
@@ -114,7 +178,10 @@
             Controls.Add(btnStockActual);
             Name = "FormReportes";
             Text = "FormReportes";
+            ((System.ComponentModel.ISupportInitialize)dgvResultados).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudUmbralStock).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -126,5 +193,11 @@
         private Button btnHistorialProducto;
         private Button btnProductosPorVencer;
         private Button btnVolver;
+        private DataGridView dgvResultados;
+        private ComboBox cmbProductoHistorial;
+        private Label label1;
+        private NumericUpDown nudUmbralStock;
+        private Label label2;
+        private Label label3;
     }
 }

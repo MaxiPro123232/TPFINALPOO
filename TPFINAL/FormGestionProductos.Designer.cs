@@ -49,7 +49,6 @@
             label6 = new Label();
             dgvProductos = new DataGridView();
             label7 = new Label();
-            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvProductos).BeginInit();
             SuspendLayout();
             // 
@@ -230,21 +229,11 @@
             label7.TabIndex = 20;
             label7.Text = "Resultados:";
             // 
-            // button1
-            // 
-            button1.Location = new Point(401, 234);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 21;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
             // FormGestionProductos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(995, 300);
-            Controls.Add(button1);
             Controls.Add(label7);
             Controls.Add(dgvProductos);
             Controls.Add(label6);
@@ -296,6 +285,5 @@
         private Label label6;
         private DataGridView dgvProductos;
         private Label label7;
-        private Button button1;
     }
 }

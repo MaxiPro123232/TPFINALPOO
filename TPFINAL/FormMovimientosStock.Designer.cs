@@ -46,7 +46,10 @@
             label6 = new Label();
             radioButton1 = new RadioButton();
             btnFiltrarPorTipo = new Button();
+            dgvMovimientos = new DataGridView();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)nudCantidad).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvMovimientos).BeginInit();
             SuspendLayout();
             // 
             // cmbProducto
@@ -209,11 +212,30 @@
             btnFiltrarPorTipo.Text = "Filtrar por Tipo";
             btnFiltrarPorTipo.UseVisualStyleBackColor = true;
             // 
+            // dgvMovimientos
+            // 
+            dgvMovimientos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvMovimientos.Location = new Point(635, 33);
+            dgvMovimientos.Name = "dgvMovimientos";
+            dgvMovimientos.Size = new Size(462, 282);
+            dgvMovimientos.TabIndex = 20;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(639, 5);
+            label7.Name = "label7";
+            label7.Size = new Size(112, 15);
+            label7.TabIndex = 21;
+            label7.Text = "Movimientos Stock:";
+            // 
             // FormMovimientosStock
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1188, 338);
+            Controls.Add(label7);
+            Controls.Add(dgvMovimientos);
             Controls.Add(btnFiltrarPorTipo);
             Controls.Add(radioButton1);
             Controls.Add(label6);
@@ -236,6 +258,7 @@
             Text = "FormMovimientosStock";
             Load += FormMovimientosStock_Load;
             ((System.ComponentModel.ISupportInitialize)nudCantidad).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvMovimientos).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -260,5 +283,7 @@
         private Label label6;
         private RadioButton radioButton1;
         private Button btnFiltrarPorTipo;
+        private DataGridView dgvMovimientos;
+        private Label label7;
     }
 }

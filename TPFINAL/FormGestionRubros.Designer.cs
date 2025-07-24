@@ -37,6 +37,7 @@
             btnVolver = new Button();
             label1 = new Label();
             label2 = new Label();
+            lstRubros = new ListBox();
             SuspendLayout();
             // 
             // txtNombreRubro
@@ -116,11 +117,21 @@
             label2.TabIndex = 8;
             label2.Text = "Descripcion Rubro:";
             // 
+            // lstRubros
+            // 
+            lstRubros.FormattingEnabled = true;
+            lstRubros.ItemHeight = 15;
+            lstRubros.Location = new Point(319, 36);
+            lstRubros.Name = "lstRubros";
+            lstRubros.Size = new Size(338, 244);
+            lstRubros.TabIndex = 9;
+            // 
             // FormGestionRubros
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(278, 321);
+            ClientSize = new Size(705, 321);
+            Controls.Add(lstRubros);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnVolver);
@@ -147,5 +158,6 @@
         private Button btnVolver;
         private Label label1;
         private Label label2;
+        private ListBox lstRubros;
     }
 }
